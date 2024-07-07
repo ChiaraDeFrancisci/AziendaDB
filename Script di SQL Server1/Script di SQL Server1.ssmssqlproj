@@ -18,21 +18,6 @@
           <ConnectionProtocol>NotSpecified</ConnectionProtocol>
           <ApplicationName>Microsoft SQL Server Management Studio - Query</ApplicationName>
         </ConnectionNode>
-        <ConnectionNode Name="MSI\SQLEXPRESS:DESKTOP-M6QRLMJ\Utente">
-          <Created>2024-06-24T09:29:12.7388009+02:00</Created>
-          <Type>SQL</Type>
-          <Server>MSI\SQLEXPRESS</Server>
-          <UserName />
-          <Authentication>Autenticazione di Windows</Authentication>
-          <InitialDB />
-          <LoginTimeout>30</LoginTimeout>
-          <TrustServerCertificate>True</TrustServerCertificate>
-          <HostNameInServerCertificate />
-          <EncryptionOption>True</EncryptionOption>
-          <ExecutionTimeout>0</ExecutionTimeout>
-          <ConnectionProtocol>NotSpecified</ConnectionProtocol>
-          <ApplicationName>Microsoft SQL Server Management Studio - Query</ApplicationName>
-        </ConnectionNode>
       </Items>
     </LogicalFolder>
     <LogicalFolder Name="Query" Type="0" Sorted="true">

@@ -2,7 +2,7 @@
 
 --DROP DATABASE Azienda;
 
---USE Azienda;
+USE Azienda;
 --USE Model;
 
 --CREATE TABLE Clienti (

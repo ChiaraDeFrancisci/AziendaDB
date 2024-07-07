@@ -1,4 +1,4 @@
-ALTER PROCEDURE SP_Ricerca
+CREATE PROCEDURE SP_Ricerca
 @IdCliente INT = NULL,
 @IdProdotto INT = NULL,
 @DataOrdineFrom DATE = NULL,

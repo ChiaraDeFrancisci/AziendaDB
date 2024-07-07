@@ -1,3 +1,4 @@
+
 CREATE TYPE OrdiniDaAggiornare AS TABLE
 (    
     IdOrdine INT
@@ -52,8 +53,9 @@ SELECT @return_value AS ReturnValue;
 go
 
 
-
-ALTER PROCEDURE SP_SelectOrdersToUpdate
+USE Azienda
+go
+CREATE PROCEDURE SP_SelectOrdersToUpdate
 AS
 BEGIN
 SET NOCOUNT ON;
@@ -62,6 +64,6 @@ JOIN Clienti AS C ON C.IdCliente=O.IdCliente
 JOIN DettaglioOrdini As DO On DO.IdOrdine=O.IdOrdine
 JOIN StatoOrdini AS SO ON SO.IdOrdine=O.IdOrdine
 JOIN Prodotti AS P ON P.IdProdotto=DO.IdProdotto
-WHERE SO.Esito=2;
+WHERE SO.Esito=2 AND SO.DataPrimoInvio IS NOT NULL;
 END
 GO
